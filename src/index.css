@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f0f0f0;
+}
+
+/* styling the navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 2rem;
+  background-color: #202030;
+  color: #fff;
+}
+
+.logo p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links ul li {
+  list-style: none;
+  margin-right: 1rem;
+}
+
+.nav-links ul li a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.user-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.2rem;
+}
+
+#user-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b0a990;
+  color: #333;
+  height: 2rem;
+  width: 2rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+/* styling the vendors page */
+.vendors-page {
+  padding: 2rem;
+}
+
+.v-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.v-header p {
+  color: #333;
+}
+
+.v-title {
+  display: grid;
+  gap: 1rem;
+}
+
+.v-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.7rem;
+  background-color: #b0a990;
+  border: none;
+  border-radius: 18px;
+  cursor: pointer;
+}
+
+.v-button button {
+  font-weight: bold;
+  background-color: transparent;
+  color: #333;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.v-body {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.3rem;
+  margin-top: 2rem;
+}
+
+.v-card {
+  position: relative;
+  width: 100%;
+  /* border: 2px solid #ddd; */
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.v-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.v-card:hover .v-overlay {
+  display: flex;
+}
+
+.v-image {
+  width: 100%;
+  height: 150px;
+}
+
+.v-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.v-info {
+  display: grid;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.v-location {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
