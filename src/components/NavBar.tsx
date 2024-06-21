@@ -13,6 +13,7 @@ const NavBar = () => {
 
         <div className="nav-links">
           <ul>
+            {/* map through the Navlinks array from the constants file */}
             {data.Navlinks.map((link) => (
               <li key={link.title}>
                 <a href={link.url}>{link.title}</a>

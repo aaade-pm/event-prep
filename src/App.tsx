@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import NavBar from "./components/NavBar";
 
+// using React.lazy to optimize routing of pages
 const HomePage = React.lazy(() => import("./pages/HomePage"));
 const VendorsPage = React.lazy(() => import("./pages/VendorsPage"));
 const EventPage = React.lazy(() => import("./pages/EventPage"));
